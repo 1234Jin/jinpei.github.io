@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+img{display:block;}
+#header{max-width:1920px;position:relative;}
+.banner{width:100%}
+#header .banner{transform: scale(1); filter: brightness(40%);transition: 0.5s;}
+#header:hover .banner{filter:brightness(100%)}
+.logo1{width:100%}
+.zhezhao{width: 100%;height:100%;position:absolute;background-color: rgb( 8, 8, 8 );opacity: 0.502;left:0;top:0;}
+.title{position:absolute;top: 18px;left: 0;margin: 0 auto;right: 0;;line-height: 69px;max-width:1200px}
+.title div{float:left}
+.title a{text-decoration:none;color:white}
+.caozuo a{padding:0 40px;font-family: "Microsoft YaHei";color: rgb( 255, 255, 255 );float: left;}
+@media(max-width:1200px){.caozuo{display:none;}}
+.logo{margin-right:162px;}
+.title a:hover{color:#05caec;}
+.dianji{position:absolute;height:30px;overflow: hidden;bottom: 0px;right: 8%;}
+.zuo,.you{width:72px;height:42px;bottom:0;text-align:center;font-size: 18px;padding-bottom: 2px;float:left;}
+.zuo{background-color: white;right:calc(19% + 38px);color:#05caec;}
+.you{background-color: #05caec;right:19%;color:white;}
+#xiangmu{overflow:hidden;max-width:1920px;background-color:#f1f1f1;margin-bottom:70px}
+.xmnr img{width:100%}
+.xmnr{float:left;padding:20px 72px 10px 72px;width:calc(100% / 4 - 144px)}
+.sekuai{height:30px;width:100%;background-color:#05caec;max-width:1920px;}
+.xmnr:hover{background-color:#05caec;}
+.fenge{clear:both;display:none;}
+.list{max-width:1200px;overflow: hidden;margin: 0 auto;}
+@media(max-width:800px){.fenge{display:block} .list{margin-left: calc(100% - 570px);}}
+@media(max-width:600px){.fenge{display:block} .list{margin-left: calc(100% - 420px);}}
+.banner2{width:100%}
+#banner2_box{max-width:1200px;margin: 0 auto;}
+#banner2_box img{width: 100%;}
+#content{margin-top:60px;max-width:1920px}
+#bangzi{background-color:#05caec;width:91px;height:11px;margin:0 auto;}
+#hanzi{font-size: 18px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );text-align: center;max-width:1200px;padding-top: 30px;padding-bottom: 35px;margin: 0 auto;padding-left: 8%;}
+.mote{float:left;padding: 20px 10px 10px 10px;width: calc((100% - 240px )/ 3  - 20px);}
+.mote img{width:100%}
+#content1{overflow:hidden;max-width:1200px;margin:0 auto;}
+.jianshen{padding-left:0px}
+.wenzi2{float: left;padding-left:20px;padding-top:140px;width:220px}
+.bangzi2{width:60px;height:11px;background-color:#05caec;}
+.yingwen{font-size: 36px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );}
+.zenggao{padding-bottom: 10px;}
+.hanzi3{font-size: 18px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );padding-top: 10px;width:160px}
+.zhezhao2{width:94%;height:93%;background-color: rgb( 5, 202, 236 );opacity: 0.902;position:absolute;top: 0;margin: 20px 30px 10px 0px;}
+.mote_box{position:relative;}
+.yaling{color:white;text-align: center;width: 80%; margin: 0 auto;margin-top: 75%;}
+.yaling1{color:white;text-align: center;width: 80%; margin: 0 auto;margin-top: 5px;}
+.content2{max-width:1920px;margin:0 auto;padding-top:60px;padding-bottom:65px}
+.left_box,.right_box{width: 307px;height: 37px;}
+.left_box{background-color: rgb( 5, 202, 236 );float:left;}
+.right_box{background-color: rgb( 76, 76, 76 );float:left;}
+.content3{max-width:1200px;margin:0 auto;overflow:hidden;width:614px}
+.baixian{background-color:white;height:1px;width:200px;margin-top: 19px;margin-left:53px;}
+.footer{height:439px;max-width:1920px;background-color: rgb( 51, 51, 51 );}
+.footer_box{max-width:1200px;margin:0 auto;overflow:hidden}
+.caozuo1{float:left;font-size: 20px;font-family: "Microsoft YaHei";color: rgb( 255, 255, 255 );text-transform: uppercase;text-decoration: none;padding:0 25px}
+.caozuo1_box{overflow: hidden;}
+.footer_box1{float:left;width:340px;height:439px;background-color: rgb( 38, 38, 38 );margin-right:96px;}
+.footer_box1 img{padding-top:88px;padding-left:90px;padding-right:90px;}
+.zhengli{font-size: 24px;font-family: "Microsoft YaHei";color: rgb( 249, 249, 249 );text-transform: uppercase;text-align:center;margin-top:20px;}
+.zhengli_e{font-size: 20px;font-family: "Microsoft YaHei";color: rgb( 249, 249, 249 );text-transform: uppercase;text-align:center;}
+.footer_box2{padding-top:100px;overflow: hidden;position:relative;height:339px;}
+.first{padding-left:0px}
+.hengxian1{margin-top:20px;height:1px;width:100%;background-color:white;}
+.comon_font{margin-top:20px;font-size: 20px;font-family: "Microsoft YaHei";color: rgb( 113, 112, 112 ); text-align: justifyLeft;text-transform: uppercase;}
+.end{padding-right:0px}
+.qrcode{position:absolute;right:0;bottom:68px}
+.sao{font-size: 18px;color: rgb( 113, 112, 112 );font-family: "Microsoft YaHei";text-transform: uppercase;text-align: justifyLeft;}
+@media(max-width:1200px){.caozuo1_box{display:none;}}
+</style>
+</head>
+
+<body>
+<div id="header">
+ <img class="banner" src="banner.png"/>
+ <!--<div class="zhezhao"></div>-->
+ <div class="title">
+   <div class="logo">
+     <img class="logo1" src="logo.png"/>
+   </div>
+   <div class="caozuo">
+	<a href="">首页</a>
+    <a href="">走进正立</a>
+    <a href="">健身课程</a>
+	<a href="">教练团队</a>
+	<a href="">教练培训</a>
+	<a href="">健身常识</a>
+   </div>
+</div>
+<div class="dianji">
+	<div class="zuo"><</div>
+	<div class="you">></div>
+</div>
+
+</div>
+<div class="sekuai"></div>
+<div id="xiangmu">
+<div class="list">
+	<div class="xmnr paobu1"><img src="paobu.png"/></div>
+	<div class="xmnr"><img src="jiqie.png"/></div>
+    <div class="fenge"></div>
+	<div class="xmnr"><img src="yujia.png"/></div>
+	<div class="xmnr"><img src="quanji.png"/></div>
+</div>
+</div>
+<div id="banner2_box">
+  <img src="banner2.png"/>
+</div>
+<div id="content">
+	<div id="bangzi"></div>
+	<div id="hanzi">健身运动的方式有多种多样，既有成套的各种徒手健美体操：也有球、棒等轻器械体操。</div>
+</div>
+<div id="content1">
+	<div class="mote jianshen"><img src="mote1.png"/></div>
+	<div class="mote"><img src="mote2.png"/></div>
+    <div class="fenge"></div>
+	<div class="mote mote_box">
+	  <img src="mote3.png"/>
+	  <div class="zhezhao2">
+		<div class="yaling">哑铃的出现和发展</div>
+		<div class="yaling1">让您的肌肉梦想成为现实</div>
+	  </div>
+	</div>
+	<div class="wenzi2">
+		<div class="yingwen">FUN</div>
+		<div class="yingwen zenggao">IN WHICH</div>
+		<div class="bangzi2"></div>
+		<div class="hanzi3">在强身健体的同时塑造完美身材</div>
+	</div>
+</div>
+<div class="content2">
+	<div class="content3">
+		<div class="left_box"><div class="baixian"></div></div>
+		<div class="right_box"><div class="baixian"></div></div>
+	</div>	
+</div>
+<div class="sekuai"></div>
+<div class="footer">
+	<div class="footer_box">
+		<div class="footer_box1">
+			<img src="logo2.png"/>
+			<div class="zhengli">正力俱乐部</div>
+			<div class="zhengli_e">FORCE CLUB</div>
+		</div>
+		<div class="footer_box2">
+			<div class="caozuo1_box">
+				<a href="" class="caozuo1 first">公司首页</a>
+				<a href="" class="caozuo1">精彩课程</a>
+				<a href="" class="caozuo1">新闻动态</a>
+				<a href="" class="caozuo1">留言咨询</a>
+				<a href="" class="caozuo1">人才招聘</a>
+				<a href="" class="caozuo1 end">咨询我们</a>
+			</div>
+			<div class="hengxian1"></div>
+			<div class="comon_font">地址：武汉市洪山区关山大道曙光星城C区1028号三楼</div>
+			<div class="comon_font">电话：027-88610053</div>
+			<div class="comon_font">邮箱：1520668862@163.COM</div>
+			<div class="qrcode sao"><img src="qrcode.png"/>扫一扫关注我们</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
