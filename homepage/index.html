@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>首页餐厅</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="swiper.min.css">
+<style>
+#header{max-width:1920px;height:80px;background-color:#f9c138;}
+#title{max-width:1400px;margin:0 auto;overflow:hidden;}
+.caozuo{float:left;line-height: 79px;margin: 0 47px;position:relative;}
+img{display:block;}
+.logo img{width:100%}
+.logo{width:320px;float: left;}
+.caozuomain{float: left;background-color: rgb( 17, 16, 13 );width:1080px;overflow: hidden;}
+.first{margin-left:5px}
+.end{margin-right:0px;}
+.duobianxing{width: 15px;height: 12px;border:100px solid;border-color:transparent transparent lightgreen transparent;}
+.sanjiaoxing{position:absolute;bottom:8px;left:40%;}
+.a_style{text-decoration:none;font-size: 20px;font-family: "Microsoft YaHei";color: rgb( 255, 255, 255 );}
+.sanjiaoxing{display:none;}
+.caozuo:hover .sanjiaoxing{display:block;}
+#banner_body{max-width:1920px;position:relative;}
+#banner_body img{width:100%;}
+.left,.right{width:35px;height:60px;color:white;position:absolute;top:45%;font-size: 28px;text-align: center;}
+.left{left:calc(50% - 700px);}
+.right{right:calc(50% - 700px);}
+#list{max-width:1400px;margin:0 auto;overflow:hidden;padding-top:30px;padding-bottom:35px;}
+.list_img{float:left;margin:0 70px;width:calc(100% / 3 - 94px)}
+.list_img img{width:100%}
+.first1{margin-left:2px;}
+.end1{margin-right:0px;}
+.caiming{ font-size: 12.707px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );margin-top:10px}
+.english{font-size: 11.118px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );text-transform: uppercase;margin-top:10px;margin-bottom:15px;}
+.dingcan{width:120px;height:35px;font-size: 14px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );text-transform: uppercase; border: solid 1px rgb( 51, 51, 51 );text-align:center;line-height:35px; margin: 0 auto;}
+.dingcan:hover{background-color:#f9c138;}
+.dingcan a{text-decoration:none;color:black;}
+#banner{background-color:#100b0b;max-width:1920px;height:300px;}
+#banner_box{max-width:1400px;margin:0 auto;overflow:hidden;padding-top:24px;padding-left: 33%;height: 252px;}
+.banner_img{width:252px;height:250px;}
+.banner_img img{width:100%;border-radius: 200px;}
+.shuxian{border:solid 1px white;height:240px;margin: 0 68px;}
+.banner_common{float:left;font-size: 18px;font-family: "Microsoft YaHei";color: white;}
+.wenzi{padding-top: 7%;}
+.wenzi1{text-align:center;font-size: 22px;font-family: "Microsoft YaHei";text-transform: uppercase;}
+.color1{color:#f9c138;margin-top:38px;}
+.color2{margin-top:20px;margin-bottom:45px;}
+#list1{max-width:1400px;margin:0 auto;overflow:hidden;padding-bottom:60px;}
+.jiachangcai{float:left;width: calc(100% / 4 - 42px);padding: 0 28px;}
+.jiachangcai img{width:300px;height:250px;}
+.first2{padding-left:0px;}
+.end2{padding-right:0px;}
+.caiming{font-size: 16px;font-family: "Microsoft YaHei"; color: rgb( 51, 51, 51 );text-transform: uppercase;text-align:center;}
+#banner2{margin:0 auto;position:relative;}
+#banner2 img{width:100%}
+.wenzi3{position:absolute;top:40%;left:36%;}
+.wenzi4{font-size: 34px;font-family: "Microsoft YaHei";color: rgb( 255, 255, 255 );text-transform: uppercase;}
+.wenzi5{margin-top:15px;text-align:center;font-size: 18px;font-family: "Microsoft YaHei";color: rgb( 255, 255, 255 );text-transform: uppercase;}
+#footer1{ font-size: 22px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );margin:0 auto;text-align:center;padding-top:118px;margin-bottom:50px;}
+#footer2{font-size: 18px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );background-color:#f9c138;height:45px;width:300px;line-height:45px;text-align:center;margin: 0 auto;}
+#footer3{max-width:1400px;margin:0 auto;overflow:hidden;padding-top:130px;}
+.wenzi7{font-size: 20px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );text-transform: uppercase;text-align:center;}
+.wenzi8{text-align:center;font-size: 14px;font-family: "Microsoft YaHei";color: rgb( 51, 51, 51 );text-transform: uppercase;margin-top:6px;}
+.guanyu{float:left;width:calc(100% / 6 - 62px);padding:0 31px;}
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+</style>
+</head>
+
+<body>
+<div id="header">
+	<div id="title">
+		<div class="logo"><img src="logo.png"/></div>
+		<div class="caozuomain">
+			<div class="caozuo first"><a href="" class="a_style">首页</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo"><a href="" class="a_style">品牌介绍</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo"><a href="" class="a_style">美味菜单</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo"><a href="" class="a_style">热门活动</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo"><a href="" class="a_style">餐厅查询</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo"><a href="" class="a_style">会员中心</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+			<div class="caozuo end"><a href="" class="a_style">礼品券</a><div class="sanjiaoxing"><img src="sanjiaoxing.png"/></div></div>
+		</div>
+	</div>
+</div>
+<div id="banner_body" class="swiper-container">
+	<div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="banner.jpg"/></div>
+      <div class="swiper-slide"><img src="banner.jpg"/></div>
+      <div class="swiper-slide"><img src="banner.jpg"/></div>
+      <div class="swiper-slide"><img src="banner.jpg"/></div>
+      <div class="swiper-slide"><img src="banner.jpg"/></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+	
+	 <!--<div class="left">&lang;</div>
+	<div class="right">&gt;</div>-->
+</div>
+<div id="list">
+	<div class="list_img first1"><img src="hongshaorou.png"/>
+		<div class="caiming">经典东坡肉</div>
+		<div class="english">The_red_is_bright__the_color_is_agate_and_a_pie</div>
+		<div class="dingcan"><a href="">立即订餐</a></div>
+	</div>
+	<div class="list_img"><img src="zhangzhongbao.png"/>
+		<div class="caiming">掌中宝</div>
+		<div class="english">The_red_is_bright__the_color_is_agate_and_a_pie</div>
+		<div class="dingcan"><a href="">立即订餐</a></div>
+	</div>
+	<div class="list_img end1"><img src="hanbao.png"/>
+		<div class="caiming">汉堡</div>
+		<div class="english">The_red_is_bright__the_color_is_agate_and_a_pie</div>
+		<div class="dingcan"><a href="">立即订餐</a></div>
+	</div>
+</div>
+<div id="banner">
+	<div id="banner_box">
+		<div class="banner_common wenzi">
+			<div>星级行政总厨</div>
+			<div>STAR EXECUTE CHEF</div>
+			<div>奈杰尔.内文</div>
+			<div>NIGEL NEVEN</div>
+		</div>
+		<div class="banner_common shuxian"></div>
+		<div class="banner_common banner_img"><img src="cheif.png"/></div>
+	</div>
+</div>
+<div class="wenzi1 color1">特色菜品</div>
+<div class="wenzi1 color2">特别的味道  自身的特点  独特地区风味</div>
+<div id="list1">
+	<div class="jiachangcai first2">
+		<img src="yu.png"/>
+		<div class="caiming">珍珠鱼</div>
+	</div>
+	<div class="jiachangcai">
+		<img src="xie.png"/>
+		<div class="caiming">将军蟹</div>
+	</div>
+	<div class="jiachangcai">
+		<img src="main.png"/>
+		<div class="caiming">黑椒虾仁意面</div>
+	</div>
+	<div class="jiachangcai end2">
+		<img src="beef.png"/>
+		<div class="caiming">美式牛排</div>
+	</div>
+</div>
+<div id="banner2">
+	<img src="banner3.png"/>
+	<div id="zhezhao"></div>
+	<div class="wenzi3">
+		<div class="wenzi4">店&nbsp;&nbsp;铺&nbsp;&nbsp;创&nbsp;&nbsp;意&nbsp;&nbsp;推&nbsp;&nbsp;荐&nbsp;&nbsp;菜</div>
+		<div class="wenzi5">给你不一样的口感，让您回味无穷</div>
+	</div>
+</div>
+<div id="footer1">中&nbsp;国&nbsp;创&nbsp;意&nbsp;西&nbsp;餐&nbsp;厅</div>
+<div id="footer2">订餐电话027-68898477</div>
+<div id="footer3">
+	<div class="guanyu">
+		<div class="wenzi7">关于我们</div>
+		<div class="wenzi8">品牌介绍</div>
+	</div>
+	<div class="guanyu">
+		<div class="wenzi7">加入我们</div>
+		<div class="wenzi8">加盟管理</div>
+		<div class="wenzi8">加盟费用</div>
+	</div>
+	<div class="guanyu">
+		<div class="wenzi7">本店特色</div>
+		<div class="wenzi8">特色菜品</div>
+	</div>
+	<div class="guanyu">
+		<div class="wenzi7">留言反馈</div>
+		<div class="wenzi8">在线投诉</div>
+		<div class="wenzi8">客户建议</div>
+	</div>
+	<div class="guanyu">
+		<div class="wenzi7">消费指南</div>
+		<div class="wenzi8">限时活动</div>
+		<div class="wenzi8">优惠菜品</div>
+	</div>
+	<div class="guanyu">
+		<div class="wenzi7">联系我们</div>
+	</div>
+</div>
+</body>
+<!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</html>
+
+
+
